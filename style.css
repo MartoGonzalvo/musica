@@ -26,12 +26,12 @@ body {text-align:center;font:12px arial, sans-serif;background:#eee}
 #nav li#m6 {margin-left:8px}
 #nav a {font-weight:normal}
 #search {margin:23px 0 0 400px}
-#search h2 {font-weight:normal}
+#search h2 {font-weight:normal; color:#BDBDBD;}
 #search form {margin:0;padding:0 0 10px 0}
 #search input.text {border:1px solid #333;background:#E7E4E4}
 #search input.submit {border:none;background:#E7E4E4}
-#search a {color:#333;padding:0 5px}
-#search a:hover {color:#300}
+#search a {color:#BDBDBD;padding:0 5px}
+#search a:hover {color:##BDBDBD}
 #head {background:url(images/header.jpg) no-repeat;position:absolute;top:0;left:0;width:382px;height:370px}
 #head-pip {background:url(images/header_pip.jpg) no-repeat;position:absolute;top:0;left:382px;width:48px;height:94px}
 .inner_copy {border:0;color:#f00;float:left;width:50% !important;margin:-100% 0 0 0;overflow:hidden;line-height:0;padding:0;font-size:11px}

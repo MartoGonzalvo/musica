@@ -4,6 +4,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Disqueria-T</title>
 	<link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+	<link  href="bootstrap/js/bootstrap.min.js"  rel="stylesheet" />
+	<link  href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="shortcut icon" href="images/favicon.ico">
 	</head>
 <body>
 	<div id="outer" >
@@ -15,20 +18,84 @@
 			<div id="head"></div>
 			<div id="head-pip"></div>
 			<ul>
-				<li id="m1"><a href="#">Login</a></li>
-				<li id="m2"><a href="#" data-toggle= "modal" data-target="#registro">Registro</a></li>
-				
-				
+				<li id="m1"><button class="btn" data-toggle= "modal" data-target="#login">Login</button></li>
+				<li id="m2"><button class="btn" data-toggle= "modal" data-target="#registro">Registro</button></li>
+					
 			</ul>
+ 	           
+ 	            <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="MyModelLabel" aria-hidden="true">
+					<div class="modal-dialog" >
+					<div class="modal-content">
+						<div class="modal-header">	
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times;</button>
+							<form action="php/validar.php" method="POST" name="adsearch" id="register"> 
+          							<div class="alert-box success form-feedback">Data OK</div>
+                 					<div class="register-top-grid">
+					                    <label for="name">Nombre*</label>
+					                    <input name="name" id="name" type="text" class="" value="" />
+					                    <label for="surname">Apellido*</label>
+					                    <input name="pass" id="pass" type="text" class="" value="" />
+								<input type="submit" name="submit_reg" value="Registrarse" class="register" /> 
+							</form>
+							
+						</div>
+						<div calss="modal-footer">
+						<button type="button" class="btn">cerrar</button>
+
+							</div>
+						</div>
+
+					</div>
+						<script src="https://code.jquery.com/jquery.js"></script>
+				<script src="bootstrap/js/bootstrap.min.js"></script>
+				</div>
+				</div>
+
+				    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="MyModelLabel" aria-hidden="true">
+					<div class="modal-dialog" >
+					<div class="modal-content">
+						<div class="modal-header">	
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times;</button>
+							<form action="register.php" method="POST" name="adsearch" id="register"> 
+          							<div class="alert-box success form-feedback">Data OK</div>
+                 					<div class="register-top-grid">
+					                    <label for="name">usuario*</label>
+					                    <input name="name" id="name" type="text" class="" value="" />
+					                    <label for="surname">contraseña*</label>
+					                    <input name="surname" id="surname" type="text" class="" value="" />
+								<input type="submit" name="submit_reg" value="Registrarse" class="register" /> 
+							</form>
+							
+						</div>
+						<div calss="modal-footer">
+						<button type="button" class="btn">cerrar</button>
+
+							</div>
+						</div>
+
+					</div>
+						<script src="https://code.jquery.com/jquery.js"></script>
+				<script src="bootstrap/js/bootstrap.min.js"></script>
+				</div>
+				</div>
+				
+
+				
+
+			  
+
+
+
+
 			<div id="search">
 				<h2>Busca por Genero</h2>
-				<form action="http://www.freewebsitetemplates.com/">
+				<form action="">
 					<input type="text" class="text" name="q" value="" id="q" /> <input type="submit" name="submit" value="Go &gt; &gt;" id="submit" class="submit" />
 				</form>
 				<a href="#">Advanced Search</a> | <a href="#">Search Tips</a>
 			</div>
 		</div>
-		<?php include("includes/registro.inc") ?>
+		
 	 <div id="body">
 			<div id="body-inner">
 				<div id="body-left">
@@ -102,6 +169,7 @@
 			</div>
 			<div class="clear">&nbsp;</div>
 		</div>
+	</div>
 	</div>
 		
 </body>
